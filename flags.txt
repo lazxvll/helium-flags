@@ -31,8 +31,6 @@
 --disable-web-bluetooth
 
 # --- Функции PDF и Печати ---
-# Примечание: Часть этих функций в Chromium являются Features,
-# но Helium часто принимает их как флаги.
 --disable-pdf-extension
 --disable-print-with-postscript-type42-fonts
 --disable-print-with-reduced-rasterization
@@ -62,3 +60,4 @@
 --enable-quic
 --enable-parallel-downloading
 --enable-webrtc-hide-local-ips-with-mdns
+
