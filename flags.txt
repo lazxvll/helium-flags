@@ -1,5 +1,6 @@
 # flags for Helium
 # verison: 0.0.1
+# update: on
 
 # --- Приватность ---
 --disable-webgl
