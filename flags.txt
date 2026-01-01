@@ -1,0 +1,63 @@
+# flags for Helium
+# verison: 0.0.1
+
+# --- Приватность ---
+--disable-webgl
+--enable-strict-origin-isolation
+--disable-accelerated-2d-canvas
+--fingerprinting-canvas-noise
+--fingerprinting-audio-context-jitter
+--disable-webusb-device-detection
+--set-ipv6-probe-false
+--disable-search-engine-collection
+--spoof-webgl-info
+--reduced-system-info
+--remove-client-hints
+--fingerprinting-client-rects-noise
+--fingerprinting-canvas-measuretext-noise
+--fingerprinting-canvas-image-data-noise
+--disable-top-sites
+--no-pings
+--webrtc-ip-handling-policy=disable_non_proxied_udp
+--disable-features=GeolocationElement
+--enable-features=LocalNetworkAccessCheck,LocalNetworkAccessCheckWebRTC,LocalNetworkAccessCheckWebSockets,LocalNetworkAccessCheckWebTransport
+
+# --- Безопасность ---
+--force-punycode-hostnames
+--hide-crashed-bubble
+
+# --- Bluetooth ---
+--disable-web-bluetooth
+
+# --- Функции PDF и Печати ---
+# Примечание: Часть этих функций в Chromium являются Features,
+# но Helium часто принимает их как флаги.
+--disable-pdf-extension
+--disable-print-with-postscript-type42-fonts
+--disable-print-with-reduced-rasterization
+--disable-read-printer-capabilities-with-xps
+--disable-use-xps-for-printing
+--disable-use-xps-for-printing-from-pdf
+--disable-oop-print-drivers
+
+# --- Контроллеры / Геймпады ---
+--disable-gamepad-multitouch
+--disable-windows-gaming-input-data-fetcher
+
+# --- Производительность и Графика ---
+--disable-bound-session-credentials-software-keys-for-manual-testing
+--disable-ui-debug-tools
+--disable-record-web-app-debug-info
+--disable-fedcm-metrics-endpoint
+--disable-cast-streaming-performance-overlay
+--enable-smooth-scrolling
+--enable-gpu-rasterization
+--enable-zero-copy
+--ignore-gpu-blocklist
+--enable-zero-copy-video-capture
+--disable-ui-disable-partial-swap
+
+# --- Интернет ---
+--enable-quic
+--enable-parallel-downloading
+--enable-webrtc-hide-local-ips-with-mdns
